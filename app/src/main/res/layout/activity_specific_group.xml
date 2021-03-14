@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecificGroup">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSpecific"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/tvSpecificName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/toolbarSpecific"
+        android:layout_marginBottom="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/tvSpecificName"
+        android:layout_marginBottom="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Members:"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/lvSpecific"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvMembers"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="16dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add Expense" />
+
+    <Button
+        android:id="@+id/btnSettleUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/btnAddExpense"
+        android:text="Settle Up" />
+
+    <Button
+        android:id="@+id/btnAddMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/btnSettleUp"
+        android:text="Add new member" />
+
+
+</RelativeLayout>

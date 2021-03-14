@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "152589298112",
+    "firebase_url": "https://dwbillapp.firebaseio.com",
+    "project_id": "dwbillapp",
+    "storage_bucket": "dwbillapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152589298112:android:96832df035403624f54025",
+        "android_client_info": {
+          "package_name": "com.example.dwbillapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152589298112-hgfb8hi79s127tged72iogkc3b0jvboe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdyoWwQyWNjL-4nWkVY80FAauBrBPqQ3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152589298112-hgfb8hi79s127tged72iogkc3b0jvboe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

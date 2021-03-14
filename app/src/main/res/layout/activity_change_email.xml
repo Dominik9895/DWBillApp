@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeEmail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <EditText
+        android:id="@+id/etNewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="New Email Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <EditText
+        android:id="@+id/etPassInEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNewEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewEmail"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/btnSubmitNewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassInEmail"
+        app:layout_constraintVertical_bias="0.065"
+        android:layout_below="@+id/etPassInEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
