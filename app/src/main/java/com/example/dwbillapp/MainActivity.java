@@ -70,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
                             User tempUser = snapshot.getValue(User.class);
                             String passwordFromDB = tempUser.getPassword();
                             if (passwordFromDB.equals(userEnteredPassword)) {
-                                Intent intentLogiIn = new Intent(MainActivity.this, MainMenu.class);
-                                intentLogiIn.putExtra("uid", uid);
-                                startActivity(intentLogiIn);
+                                Intent intentLogIn = new Intent(MainActivity.this, MainMenu.class);
+                                intentLogIn.putExtra("uid", uid);
+                                startActivity(intentLogIn);
                             } else {
                                 password.setError("Wrong username or password");
                             }
